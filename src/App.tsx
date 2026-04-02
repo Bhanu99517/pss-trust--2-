@@ -415,6 +415,11 @@ export default function App() {
 
       {/* Hero Section */}
       <section id="home" className="relative pt-12 lg:pt-20 pb-20 lg:pb-32 px-6 lg:px-8 bg-slate-50 overflow-hidden">
+        <img
+          src="https://scontent.fhyd10-2.fna.fbcdn.net/v/t39.30808-6/352111642_1744211539369232_6387317231882030590_n.png?_nc_cat=100&ccb=1-7&_nc_sid=2a1932&_nc_ohc=RMOpWCguhewQ7kNvwEZBv5a&_nc_oc=Adr11EUV9vxnIfRd_lD5T3cs4pP6aalMFDv1NUeI1UXbnm-T4SfMfDDNZVHxX3J1hKU&_nc_zt=23&_nc_ht=scontent.fhyd10-2.fna&_nc_gid=bnQ50fr-yjDC2R9iiPhoBA&_nc_ss=7a389&oh=00_Af0mDdyAQOHy_4aeGdlx26djvqTdPS-0AdOGqkS6cXyvBg&oe=69D445D4"
+          alt="bg"
+          className="w-full h-full object-cover"
+        />
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
