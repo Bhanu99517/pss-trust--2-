@@ -663,7 +663,7 @@ export default function App() {
           <div className="relative group mt-8 lg:mt-0">
             <div className="bg-slate-200 rounded-3xl overflow-hidden aspect-video shadow-2xl border-4 lg:border-8 border-white">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.247194634567!2d78.3456789!3d17.4987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93a2b1c2d3e4%3A0x5f6g7h8i9j0k1l2m!2sMiyapur%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d78.3624744!3d17.495435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb921461526cbd%3A0x4cb154861ed67af4!2sPSS+TRUST+MIYAPUR!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
@@ -672,7 +672,14 @@ export default function App() {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
               <div className="absolute top-3 left-3 lg:top-4 lg:left-4 bg-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-lg shadow-md flex items-center gap-2 text-xs lg:text-sm font-bold text-blue-600">
-                Open in Maps <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4" />
+                <a 
+                  href="https://maps.google.com/?cid=5526291152780032756" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  Open in Maps <ArrowRight className="w-3 h-3 lg:w-4 lg:h-4" />
+                </a>
               </div>
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors flex items-center justify-center pointer-events-none">
                 <p className="text-white font-bold text-sm lg:text-lg bg-black/40 px-4 lg:px-6 py-2 lg:py-3 rounded-full backdrop-blur-sm">Use ctrl + scroll to zoom the map</p>
