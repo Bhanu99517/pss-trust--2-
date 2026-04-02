@@ -64,13 +64,16 @@ export default function Attendance({ onBack }: AttendanceProps) {
 
   useEffect(() => {
     let intervalId: any;
-    if (step === 2 && isModelsLoaded && videoRef.current) {
+    if (step === 2 && isModelsLoaded) {
       intervalId = setInterval(async () => {
-        if (videoRef.current) {
-          const detections = await faceapi.detectSingleFace(videoRef.current).withFaceLandmarks().withFaceDescriptor();
+        if (videoRef.current && videoRef.current.readyState === 4) {
+          const detections = await faceapi
+            .detectSingleFace(videoRef.current)
+            .withFaceLandmarks()
+            .withFaceDescriptor();
           setFaceDetected(!!detections);
         }
-      }, 500);
+      }, 1000);
     }
     return () => clearInterval(intervalId);
   }, [step, isModelsLoaded]);
