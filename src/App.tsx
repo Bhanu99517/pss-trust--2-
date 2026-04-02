@@ -437,8 +437,8 @@ export default function App() {
             transition={{ delay: 0.2 }}
             className="text-base lg:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed"
           >
-            PSS (Platform for Student Success) is an NGO dedicated to breaking financial barriers. 
-            We connect aspiring scholars with scholarships, mentorship, and the guidance they need to pursue higher education.
+            PSS (Potukuchi Somasundara Social Welfare & Charitable Trust) is an NGO dedicated to breaking financial barriers. 
+            mentorship, and the guidance they need to pursue higher education.
           </motion.p>
         </div>
 
