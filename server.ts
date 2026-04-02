@@ -14,8 +14,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Initialize Supabase Client
-const supabaseUrl = process.env.VITE_SUPABASE_URL || "https://uuzrlznbgkngqkxrkvrv.supabase.co";
-const supabaseKey = process.env.VITE_SUPABASE_ANON_KEY || "sb_publishable_Dn53m4yquPILT_hNGmPDCw_5M9JsG8k";
+const supabaseUrl = process.env.VITE_SUPABASE_URL!;
+const supabaseKey = process.env.VITE_SUPABASE_ANON_KEY!;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // Ensure uploads directory exists
