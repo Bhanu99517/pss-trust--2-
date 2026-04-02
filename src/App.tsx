@@ -43,7 +43,7 @@ export default function App() {
   const [registeredStudentId, setRegisteredStudentId] = useState<string | null>(null);
   const [previousView, setPreviousView] = useState<'landing' | 'chairman-dashboard'>('landing');
   const [students, setStudents] = useState<any[]>([]);
-  const chairmanEmail = "p89206022@gmail.com"; // Chairman's email for Supabase Auth
+  const chairmanEmail = "bhanu99517@gmail.com"; // Chairman's email for Supabase Auth
 
   useEffect(() => {
     const fetchStudents = async () => {
