@@ -8,7 +8,7 @@ interface AttendanceProps {
   onBack: () => void;
 }
 
-const MODEL_URL = 'https://justadudewhohacks.github.io/face-api.js/models';
+const MODEL_URL = '/models';
 
 export default function Attendance({ onBack }: AttendanceProps) {
   const videoRef = useRef<HTMLVideoElement>(null);

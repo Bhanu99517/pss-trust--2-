@@ -9,7 +9,7 @@ interface FaceRegistrationProps {
   onSuccess: () => void;
 }
 
-const MODEL_URL = 'https://justadudewhohacks.github.io/face-api.js/models';
+const MODEL_URL = '/models';
 
 export default function FaceRegistration({ studentId, onSuccess }: FaceRegistrationProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
